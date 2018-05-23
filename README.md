@@ -19,6 +19,6 @@ Before class please kindly perform the below installation instructions so we can
 4. Once you have intellij installed open you intellij, you might get some set up instructions on first launch click next to continue and follw the prompts.
 5. Once you launch intellij click "Checkout from version control", enter "https://github.com/fola95/FTLWCodingClass.git" in the git repository url and hit "clone".
 6. A prompt will come up to ask if you want to open the project, hit "Ok".
-7 Your project should be all set up at this point, if you try your gradle build you should see the failing tests.
+7. Your project should be all set up at this point, if you try your gradle build you should see the failing tests.
 
 
