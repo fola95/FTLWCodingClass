@@ -1,13 +1,13 @@
 # Welcome to FTLW Coding class!!!
-In this class we are going to a brief overview of the basics of computer science and we get to learnin alll about the Java programming language.
+In this class we are going to do a brief overview of the basics of computer science and we get to learn about the Java programming language.
 This class will take the form of a "Kata". 
 
-What's a Kata???
+What's a Kata??? \
 Well, a Kata is an exercise in programming which helps programmers hone their skills through practise and repetitions.
 This paradigm comes from the concept of "practise makes perfect". It was originally coined from the japanese
 "Kata" in martial arts.
 
-For our purposes our goal in the coding section is to make our unit tests pass. 
+Our goal in the coding section is to make our unit tests pass. \
 If we are able to make them pass then we have mastered the concepts for the class!!
 
 For more information check out this [blog](http://codekata.com/).
