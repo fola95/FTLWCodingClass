@@ -22,3 +22,7 @@ Before class please kindly perform the below installation instructions so we can
 7. Your project should be all set up at this point, if you try your gradle build you should see the failing tests.
 
 
+Tips for monthly and yearly: \
+LocalDateTime [api](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html)
+
+
