@@ -2,6 +2,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by folawiyo on 5/20/18.
@@ -14,11 +15,14 @@ public class Account {
     public Account(double startBalance) {
         this.balance = startBalance;
         this.transactions = new ArrayList<>();
-        addStealthTransactionForExample();
+        addStealthPreviousMonthTransactionForExample();
+        addStealthPreviousYearTransactionForExample();
     }
-    public Account(){
+
+    public Account() {
         this.transactions = new ArrayList<>();
-        addStealthTransactionForExample();
+        addStealthPreviousYearTransactionForExample();
+        addStealthPreviousMonthTransactionForExample();
 
     }
 
@@ -38,20 +42,38 @@ public class Account {
         return this.balance;
     }
 
-    public List<Transaction> getAllTransactions(){
+    public List<Transaction> getAllTransactions() {
         // @Todo implement a way to get all transactions
-        return null;
-    }
-
-    public List<Transaction> getThisMonthTransactions() {
-        // @Todo: Implement a way to get the transactions for the current month
         return this.transactions;
     }
 
-    private void addStealthTransactionForExample(){
-        Transaction transaction = new Transaction(0, LocalDateTime.of(2015, Month.APRIL,1,1,23), TransactionType.DEBIT);
+    public List<Transaction> getAllTransactionsForThisMonth() {
+        // @Todo: Implement a way to get the transactions for the current month
+        return null;
+    }
+
+    public List<Transaction> getAllTransactionForTheYear() {
+        // @Todo: Implement a way to get the transactions for the current month
+        return null;
+    }
+
+
+   /**
+     * This is a function for adding a previous month transaction. It is purely for testing purposes.
+     */
+    private void addStealthPreviousMonthTransactionForExample() {
+        Transaction transaction = new Transaction(0, LocalDateTime.of(2018, Month.APRIL, 1, 1, 23), TransactionType.DEBIT);
         this.transactions.add(transaction);
     }
+
+    /**
+     * This is a function for adding a previous month transaction. It is purely for testing purposes.
+     */
+    private void addStealthPreviousYearTransactionForExample() {
+        Transaction transaction = new Transaction(0, LocalDateTime.of(2018, Month.APRIL, 1, 1, 23), TransactionType.DEBIT);
+        this.transactions.add(transaction);
+    }
+
 
 
 }

@@ -32,14 +32,20 @@ public class AccountTest {
         account.credit(900);
         account.credit(34);
         account.debit(20);
-        Assert.assertEquals(account.getAllTransactions().size(),3);
+        Assert.assertEquals(account.getAllTransactions().size(),5);
     }
 
     @Test
     public void checkIfICanSeeAllTransactionsForOnlyThisMonth(){
         account.credit(900);
         account.credit(34);
-        System.out.println(account.getThisMonthTransactions());
+        Assert.assertEquals(2,account.getAllTransactionsForThisMonth().size());
+    }
+
+    @Test
+    public void checkIfICanSeeAllTransactionsForOnlyThisYear(){
+        account.credit(900);
+        Assert.assertEquals(1,account.getAllTransactionForTheYear().size());
     }
 
 }
